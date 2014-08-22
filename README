@@ -2,4 +2,5 @@ A scraper for the federal register.
 
 To run the scraper-
 1. Load federalregister.rb
-2. Call getLinks(month, year)
+2. Create a new object: fr = FederalRegister.new
+2. Call fr.getLinks(month, year)
