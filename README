@@ -1,0 +1,5 @@
+A scraper for the federal register.
+
+To run the scraper-
+1. Load federalregister.rb
+2. Call getLinks(month, year)

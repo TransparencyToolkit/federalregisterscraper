@@ -54,11 +54,9 @@ def parseXML(xml, month, year)
   return temparr
 end
 
-def getLinks
+def getLinks(i, year)
   temparr = Array.new
-  
-  year = 2006
-  for i in 1..12
+
       # Set month string
       m = ""
       if i.to_s.length < 2
@@ -82,9 +80,7 @@ def getLinks
           end
         end
       end
-    end
 
-  puts JSON.pretty_generate(temparr)
+  return JSON.pretty_generate(temparr)
 end
 
-getLinks
